@@ -8,12 +8,12 @@ import { Provider } from "react-redux";
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_ || compose;
 
-let store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <Provider store={store}>
     <App />
-  </Provider>
+  </Provider>,
   document.getElementById("root")
 );
 
