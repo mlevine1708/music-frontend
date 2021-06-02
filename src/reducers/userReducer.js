@@ -3,7 +3,7 @@ export default function userReducer(state = { users: [] }, action) {
     case "FETCH_USERS":
       return { users: action.payload };
     case "ADD_USER":
-      return { ...state, accounts: [...state.accounts, action.payload] };
+      return { ...state, users: [...state.users, action.payload] };
     case "ADD_POST":
       let users = state.users.map((user) => {
         if (user.id === action.payload.id) {
@@ -30,7 +30,7 @@ export default function userReducer(state = { users: [] }, action) {
           return user;
         }
       });
-      return { ...state, users: usersThree };
+    //return { ...state, users:  };
     default:
       return state;
   }

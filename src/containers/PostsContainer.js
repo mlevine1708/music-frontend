@@ -8,7 +8,7 @@ class PostsContainer extends React.Component {
       <div>
         <PostInput user={this.props.user} />
         <br />
-        <Transactions transactions={this.props.user && this.props.user.posts} />
+        <Posts posts={this.props.user && this.props.user.posts} />
       </div>
     );
   }

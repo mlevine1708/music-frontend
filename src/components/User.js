@@ -16,7 +16,7 @@ const User = (props) => {
       <PostsContainer user={user} />
       <br />
       <h4>Edit User</h4>
-      <Edit user={user} />
+      <UserEdit user={user} />
     </div>
   );
 };
